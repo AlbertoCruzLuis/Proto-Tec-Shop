@@ -17,7 +17,7 @@ bool Notebook::is_a_convertible()
 
 virtual void Notebook::print()
 {
-    print();
+    Device::print();
     if(_convertible)
         std::cout << "(convertible)" << _drive << std::endl;
 }

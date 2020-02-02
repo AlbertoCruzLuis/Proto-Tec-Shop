@@ -33,7 +33,7 @@ class Article
         { _netPrice = netPrice; }
         
 
-        virtual print() = 0;
+        virtual void print() = 0;
 
 };
 
