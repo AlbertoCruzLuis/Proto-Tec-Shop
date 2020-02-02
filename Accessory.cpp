@@ -6,7 +6,7 @@ Accessory::Accessory(std::string model, double netPrice)
     _original = true;
 }
 
-void Accessory::print()
+virtual void Accessory::print()
 {
     std::cout << get_model() << " (original accessory)\n";
 }

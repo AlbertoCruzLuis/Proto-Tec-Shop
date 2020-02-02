@@ -18,6 +18,10 @@ class Device : public Article
         OperatingSystem get_os()
         { return _os; }
 
+        //Setters
+        void set_os(OperatingSystem os)
+        { _os = os; }
+
         virtual void print();
 };
 
