@@ -6,23 +6,23 @@ enum class OperatingSystem
     unknown, android, iOS, macOS, linux, propietary, Unix, windows
 };
 
-ostream& operator<<(ostream& os, OperatingSystem OS)
+ostream& operator<<(ostream& os)
 {
-    if(OS::unknown) 
+    if(OperatingSystem::unknown) 
         os << "unknown OS\n";
-    else if(OS::android) 
+    else if(OperatingSystem::android) 
         os << "Android OS\n";
-    else if(OS::iOS) 
+    else if(OperatingSystem::iOS) 
         os << "iOS\n";
-    else if(OS::macOS) 
+    else if(OperatingSystem::macOS) 
         os << "MacOS\n";
-    else if(OS::linux) 
+    else if(OperatingSystem::linux) 
         os << "Linux OS\n";
-    else if(OS::propietary) 
+    else if(OperatingSystem::propietary) 
         os << "proprietary OS\n";
-    else if(OS::Unix) 
+    else if(OperatingSystem::Unix) 
         os << "Unix OS\n";
-    else if(OS::windows) 
+    else if(OperatingSystem::windows) 
         os << "MS Windows OS\n";
 }
 
