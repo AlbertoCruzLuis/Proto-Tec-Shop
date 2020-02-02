@@ -1,6 +1,6 @@
 #include "Article.h"
 
-Article::Article(std::string model, double netPrice, float taxRate)
+Article::Article(std::string model, double netPrice)
 {
     _model = model;
     _netPrice = netPrice;
