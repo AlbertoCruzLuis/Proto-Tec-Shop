@@ -19,11 +19,11 @@ void ShoppingCart::add_article(int amount, Article* article)
     _articles = new InCart();
 
     //Actualising the two sum variables
-    _sumNetPrice += article->get_netPrice;
-    _sumGrossPrice += article->get_grossPrice;
+    _sumNetPrice += article->get_netPrice();
+    _sumGrossPrice += article->get_grossPrice();
 }
 
-virtual void ShoppingCart::print()
+void ShoppingCart::print()
 {
     std::cout << _sumNetPrice << std::endl;
     std::cout << _sumGrossPrice << std::endl;

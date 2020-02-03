@@ -1,7 +1,7 @@
 #ifndef SHOPPING_CART_H
 #define SHOPPING_CART_H
 
-#include "InCart.h"
+#include "InCart.cpp"
 
 class ShoppingCart
 {

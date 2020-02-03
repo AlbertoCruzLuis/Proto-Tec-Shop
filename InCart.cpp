@@ -6,7 +6,7 @@ InCart::InCart()
     _next = nullptr;
 }
 
-virtual void InCart::print()
+void InCart::print()
 {
     std::cout << _amount << std::endl;
     //Mostar single gross price and total
