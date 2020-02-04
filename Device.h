@@ -13,15 +13,22 @@ class Device : public Article
 
         Device();
         Device(std::string, double, int);
-        virtual ~Device(){}
+        virtual ~Device();
 
         //Getters
         OperatingSystem get_os()
         { return _os; }
 
+        int get_main_memory()
+        { return _main_memory; }
+
         //Setters
         void set_os(OperatingSystem os)
         { _os = os; }
+
+        void set_main_memory(int main_memory)
+        { _main_memory = main_memory; }
+
 
         virtual void print();
 };

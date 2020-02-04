@@ -6,8 +6,13 @@ Phone::Phone(std::string model, double netPrice)
     set_os(OperatingSystem::android);
 }
 
+Phone::~Phone()
+{
+    std::cout << "~Phone() ";
+}
+
 void Phone::print()
 {
     Device::print();
-    std::cout << "phone\n";
+    std::cout << " phone\n";
 }

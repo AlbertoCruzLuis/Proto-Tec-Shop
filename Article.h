@@ -14,7 +14,7 @@ class Article
 
         Article();
         Article(std::string, double);
-        virtual ~Article(){}
+        virtual ~Article();
 
         //Getters
         std::string get_model()

@@ -9,6 +9,11 @@ Notebook::Notebook(std::string model, double netPrice, int main_memory,
     _convertible = false;
 }
 
+Notebook::~Notebook()
+{
+    std::cout << "~Notebook() ";
+}
+
 bool Notebook::is_a_convertible()
 {
     return true;

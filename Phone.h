@@ -9,7 +9,7 @@ class Phone : public Device
 
         Phone();
         Phone(std::string, double);
-        virtual ~Phone(){}
+        virtual ~Phone();
 
         virtual void print();
 };

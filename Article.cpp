@@ -6,3 +6,9 @@ Article::Article(std::string model, double netPrice)
     _netPrice = netPrice;
     _taxRate = 19;  //Default percentage
 }
+
+Article::~Article()
+{
+    std::cout << "~Article() ";
+    std::cout << get_model() << std::endl;
+}

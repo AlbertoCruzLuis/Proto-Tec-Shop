@@ -2,6 +2,7 @@
 #define INCART_H
 
 #include <iostream>
+#include <iomanip>
 #include "Article.h"
 
 class InCart 
@@ -13,7 +14,7 @@ class InCart
     public:
 
         InCart();
-        virtual ~InCart(){}
+        virtual ~InCart();
 
         //Getters
         InCart* get_next()
@@ -26,6 +27,9 @@ class InCart
         { return _article; }
 
         //Setters
+        void set_next(InCart* next)
+        { _next = next; }
+
         void set_amount(int amount)
         { _amount = amount; }
 

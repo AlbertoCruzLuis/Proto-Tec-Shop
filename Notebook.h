@@ -13,7 +13,7 @@ class Notebook : public Device
 
         Notebook();
         Notebook(std::string, double, int, std::string);
-        virtual ~Notebook(){}
+        virtual ~Notebook();
 
         bool is_a_convertible();
         virtual void print();
