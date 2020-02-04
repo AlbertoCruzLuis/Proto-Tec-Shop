@@ -1,6 +1,6 @@
 #include <iostream>
-#include "ShoppingCart.cpp"
-#include "Accessory.cpp"
+#include "ShoppingCart.h"
+#include "Accessory.h"
 
 int main()
 {
@@ -9,11 +9,12 @@ int main()
     ShoppingCartObj.set_minFreeShipping(500);
 
     //Create Article YOOLOX 10k Wireless Powerbank Qi
-    Accessory* Yoolox = new Accessory();
-    //Yoolox->set_model("YOOLOX 10k Wireless Powerbank Qi");
-    //Yoolox->set_netPrice(31.08);
+    Accessory* Yoolox = new Accessory("YOOLOX 10k Wireless Powerbank Qi",
+                                    31.08);
 
-    //ShoppingCartObj.add_article(3,Yoolox);
+    ShoppingCartObj.add_article(3,Yoolox);
+
+    ShoppingCartObj.print();
 
     return 0;
 }

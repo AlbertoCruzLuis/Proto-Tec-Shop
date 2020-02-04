@@ -12,6 +12,7 @@ class Device : public Article
     public:
 
         Device();
+        Device(std::string, double, int);
         virtual ~Device(){}
 
         //Getters

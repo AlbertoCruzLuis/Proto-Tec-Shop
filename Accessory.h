@@ -11,6 +11,7 @@ class Accessory : public Article
     public:
 
         Accessory();
+        Accessory(std::string, double);
         virtual ~Accessory(){}
 
         virtual void print();

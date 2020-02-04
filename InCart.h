@@ -19,6 +19,19 @@ class InCart
         InCart* get_next()
         { return _next; }
 
+        int get_amount()
+        { return _amount; }
+
+        Article* get_article()
+        { return _article; }
+
+        //Setters
+        void set_amount(int amount)
+        { _amount = amount; }
+
+        void set_article(Article* article)
+        { _article = article; }
+
         virtual void print();
 };
 

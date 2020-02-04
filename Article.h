@@ -8,11 +8,12 @@ class Article
 {
     std::string _model;
     double _netPrice;    
-    float _taxRate; //As a percentage(%)
+    int _taxRate; //As a percentage(%)
 
     public:
 
         Article();
+        Article(std::string, double);
         virtual ~Article(){}
 
         //Getters
@@ -23,7 +24,10 @@ class Article
         { return _netPrice; }
 
         double get_grossPrice()
-        { return _netPrice + _taxRate; }
+        { return _netPrice + (_netPrice * _taxRate)/100; }
+
+        int get_taxRate()
+        { return _taxRate; }
 
         //Setters
         void set_model(std::string model)

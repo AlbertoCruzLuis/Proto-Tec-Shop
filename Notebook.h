@@ -2,6 +2,7 @@
 #define NOTEBOOK_H
 
 #include <string>
+#include "Device.h"
 
 class Notebook : public Device
 {
@@ -11,6 +12,7 @@ class Notebook : public Device
     public:
 
         Notebook();
+        Notebook(std::string, double, int, std::string);
         virtual ~Notebook(){}
 
         bool is_a_convertible();
