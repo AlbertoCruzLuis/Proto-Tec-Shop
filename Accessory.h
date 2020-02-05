@@ -12,6 +12,7 @@ class Accessory : public Article
 
         Accessory();
         Accessory(std::string, double);
+        Accessory(std::string, double, bool);
         virtual ~Accessory();
 
         virtual void print();

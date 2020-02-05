@@ -29,25 +29,13 @@ ShoppingCart::~ShoppingCart()
 void ShoppingCart::add_article(int amount, Article* article)
 {
     InCart* NewCart = new InCart();
-    if(_articles == nullptr)
-    {
-        //Add first cart to the shop
-        NewCart->set_next(_articles);
-        _articles = NewCart;
-    }else
-    {
-        //Add other cart to the shop
-        InCart* aux = _articles;
-        while(aux->get_next() != nullptr)
-        {
-            aux = aux->get_next();
-        }
-        aux->set_next(NewCart);
-    }
+
+    //Add cart to the shop
+    NewCart->set_next(_articles);
+    _articles = NewCart;
 
     NewCart->set_article(article);
     NewCart->set_amount(amount);
-    NewCart->set_next(nullptr);
 
     //Actualising the two sum variables
     _sumNetPrice += article->get_netPrice() * amount;

@@ -22,6 +22,8 @@ bool Notebook::is_a_convertible()
 void Notebook::print()
 {
     Device::print();
+    std::cout << ", ";
     if(_convertible)
-        std::cout << "(convertible)" << _drive << std::endl;
+        std::cout << "(convertible)";
+    std::cout << _drive;
 }

@@ -1,24 +1,24 @@
 #include "OperatingSystem.h"
 
-std::ostream& operator<<(std::ostream& os, OperatingSystem OS)
+std::ostream& operator<< (std::ostream& os, OperatingSystem OS)
 {
     switch (OS)
     {
-        case unknown : os << "unknown OS";
+        case OperatingSystem::unknown : os << "unknown OS";
             break;
-        case android : os << "Android OS";
+        case OperatingSystem::android : os << "Android OS";
             break;
-        case iOS : os << "iOS";
+        case OperatingSystem::iOS : os << "iOS";
             break;
-        case macOS : os << "MacOS";
+        case OperatingSystem::macOS : os << "MacOS";
             break;
-        case Linux : os << "Linux OS";
+        case OperatingSystem::Linux : os << "Linux OS";
             break;
-        case propietary : os << "proprietary OS";
+        case OperatingSystem::propietary : os << "proprietary OS";
             break;
-        case Unix : os << "Unix OS";
+        case OperatingSystem::Unix : os << "Unix OS";
             break;
-        case windows : os << "MS Windows OS";
+        case OperatingSystem::windows : os << "MS Windows OS";
             break;
     }
     return os;

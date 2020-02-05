@@ -12,7 +12,7 @@ int main()
 
     //Create Accessory YOOLOX 10k Wireless Powerbank Qi
     Accessory* Yoolox = new Accessory("YOOLOX 10k Wireless Powerbank Qi",
-                                    31.08);
+                                    31.08, false);
 
     ShoppingCartObj.add_article(3,Yoolox);
 
@@ -33,7 +33,6 @@ int main()
     ShoppingCartObj.add_article(2,iPhone);
 
     //Create Notebook ASUS ROG Strix Scar III G731
-
     Notebook* Asus = new Notebook("ASUS ROG Strix Scar III G731",
                                 1586.55,16,"512GB SSD + 1TB SSHD");
     Asus->set_os(OperatingSystem::windows);

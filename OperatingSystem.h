@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-enum OperatingSystem
+enum class OperatingSystem
 {
     unknown,
     android, 
@@ -14,5 +14,7 @@ enum OperatingSystem
     Unix, 
     windows 
 };
+
+std::ostream& operator<< (std::ostream&, OperatingSystem);
 
 #endif

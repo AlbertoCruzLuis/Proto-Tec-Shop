@@ -10,5 +10,5 @@ Article::Article(std::string model, double netPrice)
 Article::~Article()
 {
     std::cout << "~Article() ";
-    std::cout << get_model() << std::endl;
+    std::cout << get_model() << "\n\n";
 }

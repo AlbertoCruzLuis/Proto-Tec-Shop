@@ -14,5 +14,5 @@ Phone::~Phone()
 void Phone::print()
 {
     Device::print();
-    std::cout << " phone\n";
+    std::cout << " phone";
 }
