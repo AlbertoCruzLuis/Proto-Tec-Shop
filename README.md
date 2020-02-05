@@ -18,5 +18,7 @@ git clone https://github.com/AlbertoCruzLuis/Proto-Tec-Shop.git
 2) Usage Manual
 
 cd src/
+
 make
+
 ./ElectronicShoppingCart
