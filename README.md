@@ -9,7 +9,7 @@ extendable electronic shopping cart shall be programmed. As example articles sma
 notebooks and accessories shall be ordered (due to clarity in the UML class diagram below data
 types, parameters and destructors are omitted.)
 
-Getting Started
+# Getting Started
 
 1) Download the Project
 
