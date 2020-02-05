@@ -13,6 +13,8 @@ Getting Started
 
 1) Download the Project
 
+git clone https://github.com/AlbertoCruzLuis/Proto-Tec-Shop.git
+
 2) Usage Manual
 
 make
