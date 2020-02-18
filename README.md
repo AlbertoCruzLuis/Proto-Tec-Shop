@@ -22,3 +22,6 @@ cd src/
 make
 
 ./ElectronicShoppingCart
+
+-----------------------------
+Alberto cruz luis
