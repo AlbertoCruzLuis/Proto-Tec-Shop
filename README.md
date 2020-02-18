@@ -24,4 +24,4 @@ make
 ./ElectronicShoppingCart
 
 -----------------------------
-Alberto cruz luis
+Autor: Alberto cruz luis
